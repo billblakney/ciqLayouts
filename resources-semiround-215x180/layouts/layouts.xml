@@ -1,0 +1,94 @@
+<!-- layouts for 215x180 -->
+<layouts>
+    <!-- A generic, centered layout. -->
+    <layout id="All">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_THAI_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">90</param>
+        	<param name="font">Gfx.FONT_NUMBER_THAI_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="TopHalf">
+<!--
+        <label id="value" x="center" y="20" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+-->
+        <label id="value" x="center" y="-10" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_THAI_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">90</param>
+        	<param name="font">Gfx.FONT_NUMBER_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="BotHalf">
+        <label id="value" x="center" y="10" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">0</param>
+	        <param name="font">Gfx.FONT_NUMBER_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="TopThird">
+        <label id="value" x="center" y="7" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">90</param>
+        	<param name="font">Gfx.FONT_NUMBER_MEDIUM</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="MidThird">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">33</param>
+        	<param name="font">Gfx.FONT_NUMBER_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="LeftMidThird">
+        <label id="value" x="60" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">33</param>
+        	<param name="font">Gfx.FONT_NUMBER_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="RightMidThird">
+        <label id="value" x="40" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">0</param>
+        	<param name="center_y">33</param>
+        	<param name="font">Gfx.FONT_NUMBER_HOT</param>
+        </drawable>
+-->
+    </layout>
+    <layout id="BotThird">
+        <label id="value" x="center" y="2" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+<!--
+        <drawable id="ADrawable" class="ADrawable" >
+        	<param name="center_x">107</param>
+        	<param name="center_y">0-34</param>
+	        <param name="font">Gfx.FONT_NUMBER_MEDIUM</param>
+        </drawable>
+-->
+    </layout>
+</layouts>
+<!-- -->
+<!-- fr height: 180, half: 90, topThird: 55, midThird: 66 -->
+<!-- dimensions of 888 -->
+<!-- number thai hot: 120,104 -->
+<!-- number hot:       69, 59 -->
+<!-- number medium:    54, 47 -->
+<!-- number mild:      33, 29 -->

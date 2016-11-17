@@ -1,0 +1,39 @@
+<layouts>
+    <!-- A generic, centered layout. -->
+    <layout id="All">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_THAI_HOT" />
+    </layout>
+    <layout id="TopHalf">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+    </layout>
+    <layout id="BotHalf">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+    </layout>
+    <layout id="TopThird">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+    <layout id="MidThird">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+    </layout>
+    <layout id="LeftMidThird">
+        <label id="value" x="60" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+    </layout>
+    <layout id="RightMidThird">
+        <label id="value" x="40" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_HOT" />
+    </layout>
+    <layout id="BotThird">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+    <layout id="TopLeftQuad">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+    <layout id="TopRightQuad">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+    <layout id="BotLeftQuad">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+    <layout id="BotRightQuad">
+        <label id="value" x="center" y="center" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_NUMBER_MEDIUM" />
+    </layout>
+</layouts>
