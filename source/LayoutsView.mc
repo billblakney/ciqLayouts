@@ -63,6 +63,13 @@ class LayoutsView extends Ui.DataField
 
    /*-------------------------------------------------------------------------
     *------------------------------------------------------------------------*/
+   function getLayoutId(width,height,obscurity)
+   {
+      return 1000*obscurity + width + height;
+   }
+
+   /*-------------------------------------------------------------------------
+    *------------------------------------------------------------------------*/
    function onLayout(dc)
    {
       var width = dc.getWidth();
@@ -70,9 +77,13 @@ class LayoutsView extends Ui.DataField
       var obscurityFlags = DataField.getObscurityFlags();
 
       var layout = setLayout(dc,screenWidth,screenHeight,width,height,obscurityFlags);
+      var layoutId = getLayoutId(width,height,obscurityFlags);
 
-      var layoutId = 1000*obscurityFlags + width + height;
-      Sys.println("layout: " + layoutId + " " + layout);
+      Sys.println("width....... " + width);
+      Sys.println("height...... " + height);
+      Sys.println("obscurity... " + obscurityFlags);
+      Sys.println("layoutId.... " + layoutId);
+      Sys.println("layout...... " + layout);
 
       drawable = View.findDrawableById("value");
 
@@ -114,7 +125,7 @@ class LayoutsView extends Ui.DataField
        /*
         * Draw the value.
         */
-Sys.println("position: " + drawable.locX + "," + drawable.locY);
+//Sys.println("position: " + drawable.locX + "," + drawable.locY);
        drawable.setText(toStr(mValue));
        //        drawable.setText(mValue.format("%2f"));
        drawable.setColor(Gfx.COLOR_BLACK);

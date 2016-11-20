@@ -1,9 +1,10 @@
 ************************
 watchface sizes
 ---------------
-fr 215 ,180
-fx 218, 218
-bv 218, 218
+forerunner 215x180
+fenix 218x218
+bravo 218x218
+vivoactive: 205x148
 
 ************************
 watchface layout areas
@@ -15,9 +16,9 @@ bLR  -> botHalf
 ---------------
 tLR  -> topThird
 LR   -> midThird
+bLR  -> botThird
 L    -> lMidThird
 R    -> rMidThird
-bLR  -> botThird
 ---------------
 tL   -> tlQuad
 tR   -> trQuad
@@ -27,47 +28,63 @@ bR   -> brQuad
 
 ************************
 forerunner layouts
+------------------------      id
+(1) all:       215,180,tbLR  15395
 ------------------------
-all: 215,180 tbLR       = 1
+(2) topHalf:   215, 89,tLR    7304
+(3) botHalf:   215, 89,bLR   13304
 ------------------------
-topHalf: 215, 89 tLR    = 2
-botHalf: 215, 89 bLR    = 3
+(4) topThird:  215, 55,tLR    7270
+(5) midThird:  215, 66,LR     5281
+(6) botThird:  215, 55,bLR   13270
 ------------------------
-topThird: 215, 55 tLR   = 4
-midThird: 215, 66 LR    = 5
-botThird: 215, 55 bLR   = 6
+    topThird:  215, 55,tLR
+(7) lMidThird: 107, 66,L      1173
+(8) rMidThird: 107, 66,R      4173
+    botThird:  215, 55,bLR
 ------------------------
-topThird:  215, 55 tLR
-lMidThird: 107, 66 L    = 7
-rMidThird: 107, 66 R    = 8
-botThird:  215, 55 bLR
+Horizontal dividers = 2px
 ------------------------
 
 ************************
 fenix/bravo layouts
+------------------------       id
+(1)  all:       218,218 tbLR 15346
 ------------------------
-all:       218,218 tbLR = 1
+(2)  topHalf:   218,108 tLR   7326
+(3)  botHalf:   218,108 bLR  13326
 ------------------------
-topHalf:   218,108 tLR  = 2
-botHalf:   218,108 bLR  = 3
+(4)  topThird:  218, 70 tLR   7288
+(5)  midThird:  218, 74 LR    5292
+(6)  botThird:  218, 70 bLR  13288
 ------------------------
-topThird:  218, 70 tLR  = 4
-midThird:  218, 74 LR   = 5
-botThird:  218, 70 bLR  = 6
+     topHalf:   218,108 tLR
+(9)  blQuad:    108,108 bL    9216  
+(10) brQuad:    108,108 bR   12216
 ------------------------
-topHalf:   218,108 tLR
-blQuad:    108,108 bL   = 9
-brQuad:    108,108 bR   = 10
+     topThird:  218, 70 tLR
+(11) lMidThird: 108, 74 L     1182
+(12) rMidThird: 108, 74 R     4182
+     botThird:  218, 70 bLR
 ------------------------
-topThird:  218, 70 tLR
-lMidThird: 108, 74 L    = 11
-rMidThird: 108, 74 R    = 12
-botThird:  218, 70 bLR
+(7)  tlQuad:    108,108 tL    3216
+(8)  trQuad:    108,108 tR    6216
+     blQuad:    108,108 bL
+     brQuad:    108,108 bR
 ------------------------
-tlQuad:    108,108 tL   = 7
-trQuad:    108,108 tR   = 8
-blQuad:    108,108 bL
-brQuad:    108,108 bR
+
+************************
+vivoactive layouts
+------------------------        id
+(1) all:      205,148 u        353
+------------------------
+(2) topHalf:  205, 73 u        278
+------------------------
+(3) topThird: 205, 43 u        248
+(4) midThird: 205, 57 u        262
+(5) botThird: 205, 44 u        249
+------------------------
+Horizontal dividers = 2px
 ------------------------
 
 ************************
@@ -78,6 +95,7 @@ top   (t)  0010 = 2
 right (R)  0100 = 4
 bottom(b)  1000 = 8
 ------------------------
+u     =  0
 LR    =  5
 LR-t  =  7
 LR-b  = 13
