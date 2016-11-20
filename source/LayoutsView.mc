@@ -83,7 +83,8 @@ class LayoutsView extends Ui.DataField
     *------------------------------------------------------------------------*/
     function compute(info)
     {
-       setValueHeartRate(info);
+       mValue = 888;
+//       setValueHeartRate(info);
     }
 
    /*-------------------------------------------------------------------------
