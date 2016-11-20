@@ -42,11 +42,11 @@ class LayoutsView extends Ui.DataField
    var screenWidth;
    var screenHeight;
 
-   /** monitored heart rate */
-   hidden var mHeartRate;
+   /** value to display */
+   hidden var mValue;
 
    /** drawable for value */
-   hidden var value;
+   hidden var drawable;
 
    /*-------------------------------------------------------------------------
     *------------------------------------------------------------------------*/
@@ -58,7 +58,7 @@ class LayoutsView extends Ui.DataField
       screenWidth = deviceSettings.screenWidth;
       screenHeight = deviceSettings.screenHeight;
 
-      mHeartRate = 0;
+      mValue = 0;
    }
 
    /*-------------------------------------------------------------------------
@@ -74,7 +74,7 @@ class LayoutsView extends Ui.DataField
       var layoutId = 1000*obscurityFlags + width + height;
       Sys.println("layout: " + layoutId + " " + layout);
 
-      value = View.findDrawableById("value");
+      drawable = View.findDrawableById("value");
 
       return true;
    }
@@ -83,12 +83,18 @@ class LayoutsView extends Ui.DataField
     *------------------------------------------------------------------------*/
     function compute(info)
     {
-        // See Activity.Info in the documentation for available information.
+       setValueHeartRate(info);
+    }
+
+   /*-------------------------------------------------------------------------
+    *------------------------------------------------------------------------*/
+    function setValueHeartRate(info)
+    {
         if(info has :currentHeartRate){
             if(info.currentHeartRate != null){
-                mHeartRate = info.currentHeartRate;
+                mValue = info.currentHeartRate;
             } else {
-                mHeartRate = 0;
+                mValue = 0;
             }
         }
     }
@@ -105,14 +111,14 @@ class LayoutsView extends Ui.DataField
        dc.setColor(Gfx.COLOR_BLACK,Gfx.COLOR_WHITE);
 
        /*
-        * Draw the heart rate.
+        * Draw the value.
         */
-Sys.println("position: " + value.locX + "," + value.locY);
-       value.setText(toStr(mHeartRate));
-       //        value.setText(mHeartRate.format("%2f"));
-       value.setColor(Gfx.COLOR_BLACK);
-       value.setBackgroundColor(Gfx.COLOR_TRANSPARENT);
-       value.draw(dc);
+Sys.println("position: " + drawable.locX + "," + drawable.locY);
+       drawable.setText(toStr(mValue));
+       //        drawable.setText(mValue.format("%2f"));
+       drawable.setColor(Gfx.COLOR_BLACK);
+       drawable.setBackgroundColor(Gfx.COLOR_TRANSPARENT);
+       drawable.draw(dc);
     }
 
    /*-------------------------------------------------------------------------
