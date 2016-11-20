@@ -1,0 +1,86 @@
+************************
+watchface sizes
+---------------
+fr 215 ,180
+fx 218, 218
+bv 218, 218
+
+************************
+watchface layout areas
+---------------
+tbLR -> all
+---------------
+tLR  -> topHalf
+bLR  -> botHalf
+---------------
+tLR  -> topThird
+LR   -> midThird
+L    -> lMidThird
+R    -> rMidThird
+bLR  -> botThird
+---------------
+tL   -> tlQuad
+tR   -> trQuad
+bL   -> blQuad
+bR   -> brQuad
+---------------
+
+************************
+forerunner layouts
+------------------------
+all: 215,180 tbLR       = 1
+------------------------
+topHalf: 215, 89 tLR    = 2
+botHalf: 215, 89 bLR    = 3
+------------------------
+topThird: 215, 55 tLR   = 4
+midThird: 215, 66 LR    = 5
+botThird: 215, 55 bLR   = 6
+------------------------
+topThird:  215, 55 tLR
+lMidThird: 107, 66 L    = 7
+rMidThird: 107, 66 R    = 8
+botThird:  215, 55 bLR
+------------------------
+
+************************
+fenix/bravo layouts
+------------------------
+all:       218,218 tbLR = 1
+------------------------
+topHalf:   218,108 tLR  = 2
+botHalf:   218,108 bLR  = 3
+------------------------
+topThird:  218, 70 tLR  = 4
+midThird:  218, 74 LR   = 5
+botThird:  218, 70 bLR  = 6
+------------------------
+topHalf:   218,108 tLR
+blQuad:    108,108 bL   = 9
+brQuad:    108,108 bR   = 10
+------------------------
+topThird:  218, 70 tLR
+lMidThird: 108, 74 L    = 11
+rMidThird: 108, 74 R    = 12
+botThird:  218, 70 bLR
+------------------------
+tlQuad:    108,108 tL   = 7
+trQuad:    108,108 tR   = 8
+blQuad:    108,108 bL
+brQuad:    108,108 bR
+------------------------
+
+************************
+obscurity flags
+------------------------
+left  (L)  0001 = 1
+top   (t)  0010 = 2
+right (R)  0100 = 4
+bottom(b)  1000 = 8
+------------------------
+LR    =  5
+LR-t  =  7
+LR-b  = 13
+LR-tb = 15
+------------------------
+
